@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: '/jterren'
+  basePath: '/projectstanley'
 };
 
 export default nextConfig;
