@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import { getLinks } from "@/helpers";
+import slimePng from "../../assets/slime_bounce.png";
+import slimeGif from "../../assets/slime_bounce.gif";
 
 const Navbar: React.FC = () => {
 	const [isHovered, setIsHovered] = useState(false);
@@ -17,9 +19,7 @@ const Navbar: React.FC = () => {
 				<div className="collapse navbar-collapse" id="navbarNav">
 					<Link href="/" className="navbar-brand">
 						<Image
-							src={`${process.env.NEXT_PUBLIC_BASE_PATH}${
-								isHovered ? "/slime_bounce.gif" : "/slime_bounce.png"
-							}`}
+							src={isHovered ? slimeGif : slimePng}
 							alt={"Bouncing Slime by Jake Terren"}
 							width={64}
 							height={64}
