@@ -17,7 +17,9 @@ const Navbar: React.FC = () => {
 				<div className="collapse navbar-collapse" id="navbarNav">
 					<Link href="/" className="navbar-brand">
 						<Image
-							src={isHovered ? "/slime_bounce.gif" : "/slime_bounce.png"}
+							src={`${process.env.NEXT_PUBLIC_BASE_PATH}${
+								isHovered ? "/slime_bounce.gif" : "/slime_bounce.png}"
+							}`}
 							alt={"Bouncing Slime by Jake Terren"}
 							width={64}
 							height={64}
