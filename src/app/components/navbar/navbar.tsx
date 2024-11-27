@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
 					<Link href="/" className="navbar-brand">
 						<Image
 							src={`${process.env.NEXT_PUBLIC_BASE_PATH}${
-								isHovered ? "/slime_bounce.gif" : "/slime_bounce.png}"
+								isHovered ? "/slime_bounce.gif" : "/slime_bounce.png"
 							}`}
 							alt={"Bouncing Slime by Jake Terren"}
 							width={64}
