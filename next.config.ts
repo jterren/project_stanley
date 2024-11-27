@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: '/jterren'
+  images: {
+    localPatterns: [
+      {
+        pathname: '/assets/**',
+        search: '',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
